@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BussinessObject.Models;
 
@@ -21,7 +22,6 @@ public partial class PawFundProjectContext : DbContext
     public virtual DbSet<Pet> Pets { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
     private string GetConnectionString()
     {
         IConfiguration config = new ConfigurationBuilder()
@@ -61,7 +61,6 @@ public partial class PawFundProjectContext : DbContext
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(50)
                 .IsUnicode(false);
-            entity.Property(e => e.Reason).HasMaxLength(255);
             entity.Property(e => e.ReasonForAdopting)
                 .HasMaxLength(255)
                 .IsUnicode(false);

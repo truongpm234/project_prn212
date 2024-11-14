@@ -25,7 +25,6 @@ public partial class Adoption
 
     public string? ReasonForAdopting { get; set; }
 
-    public string? Reason { get; set; }
 
     public virtual Pet? Pet { get; set; }
 

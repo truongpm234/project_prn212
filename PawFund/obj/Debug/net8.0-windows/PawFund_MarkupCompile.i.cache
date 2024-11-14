@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\SE_FALL2024_S5\PRN212\GroupProject\PawFund\App.xaml
-6600698468
+11-2086775050
 
-11700752127
-247-1779002078
-AdminWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ManagerWindowxaml.xaml;StaffWindow.xaml;UserWindow.xaml;
+1698560449
+250-1837932609
+AdminWindow.xaml;AdoptionWindow.xaml;CreatePetWindowxaml.xaml;LoginWindow.xaml;MainWindow.xaml;ManagerWindowxaml.xaml;RegisterWindow.xaml;StaffWindow.xaml;UpdatePetWindow.xaml;UpdateUserWindow.xaml;UserWindow.xaml;
 
 True
 

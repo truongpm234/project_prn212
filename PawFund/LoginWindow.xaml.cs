@@ -35,25 +35,26 @@ namespace PawFund
             var us = User.checkLogin(ml, pa);
             if (us != null)
             {
-                if (us.UserId == 3)
+                UserSession.UserId = us.UserId;
+                if (us.RoleId == 3)
                 {
                     StaffWindow staffWindow = new StaffWindow();
                     staffWindow.ShowDialog();
                     Close();
                 }
-                else if (us.UserId == 2)
+                else if (us.RoleId == 2)
                 {
                     ManagerWindowxaml managerWindow = new ManagerWindowxaml();
                     managerWindow.Show();
                     this.Close();
                 }
-                else if(us.UserId == 1)
+                else if(us.RoleId == 1)
                 {
                     AdminWindow adminWindow = new AdminWindow();
                     adminWindow.Show();
                     this.Close();
                 }
-                else if(us.UserId == 4)
+                else if(us.RoleId == 4)
                 {
                     UserWindow userWindow = new UserWindow();
                     userWindow.Show();
@@ -66,9 +67,10 @@ namespace PawFund
             }
         }
 
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.ShowDialog();
         }
     }
 }

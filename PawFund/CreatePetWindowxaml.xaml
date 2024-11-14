@@ -1,0 +1,61 @@
+﻿<Window x:Class="PawFund.CreatePetWindowxaml"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PawFund"
+        mc:Ignorable="d"
+            Title="Create Ptt" Height="900" Width="500">
+    <Grid Margin="10">
+        <StackPanel Margin="0,0,0,-90">
+
+            <TextBlock Text="Pet ID:" />
+            <TextBox x:Name="txtPetId" IsReadOnly="True" />
+
+
+            <TextBlock Text="Pet Name:" />
+            <TextBox x:Name="txtPetName" />
+
+
+            <TextBlock Text="Pet Type:" />
+            <TextBox x:Name="txtPetType" />
+
+            <TextBlock Text="Age:" />
+            <TextBox x:Name="txtAge" />
+
+            <TextBlock Text="Gender:" />
+            <ComboBox x:Name="cmbGender">
+                <ComboBoxItem Content="Male" />
+                <ComboBoxItem Content="Female" />
+            </ComboBox>
+
+
+            <TextBlock Text="Address:" />
+            <TextBox x:Name="txtAddress" />
+
+
+            <TextBlock Text="Medical Condition:" />
+            <TextBox x:Name="txtMedicalCondition" />
+
+
+            <TextBlock Text="Is Adopted:" />
+            <CheckBox x:Name="chkIsAdopted"/>
+
+            <TextBlock Text="Description:" />
+            <TextBox x:Name="txtDescription" AcceptsReturn="True" Height="100" />
+
+
+            <TextBlock Text="Color:" />
+            <TextBox x:Name="txtColor" />
+
+            <TextBlock Text="Size:" />
+            <TextBox x:Name="txtSize" />
+
+            <TextBlock Text="User ID:" />
+            <TextBox x:Name="txtUserId" IsReadOnly="True" />
+
+            <Button Content="Create" Click="btnCreate_Click" Margin="5"/>
+            <Button Content="Cancel" Click="btnCancel_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

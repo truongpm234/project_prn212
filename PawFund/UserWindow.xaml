@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PawFund"
         mc:Ignorable="d"
-        Title="UserWindow" Height="450" Width="800">
+              Title="UserWindow" Height="500" Width="1000"
+FontFamily="Tahoma"
+FontSize="13"
+Background="#FFF2F184"
+WindowStartupLocation="CenterScreen"
+>
+
     <Grid>
+        <DataGrid x:Name="dgair" AutoGenerateColumns="False" ItemsSource="{Binding Pets}" Margin="10,10,10,133">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="txtPlayerId" Header="PetID" Binding="{Binding PetId}" Width="Auto"/>
+                <DataGridTextColumn Header="Pet Name" Binding="{Binding PetName}" Width="*"/>
+                <DataGridTextColumn Header="Pet type" Binding="{Binding PetType}" Width="Auto"/>
+                <DataGridTextColumn Header="Age" Binding="{Binding Age}" Width="Auto"/>
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" Width="*"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="Auto"/>
+                <DataGridTextColumn Header="Medical Condition" Binding="{Binding MedicalCondition}" Width="Auto"/>
+
+
+
+                <DataGridTextColumn Header="Is Adopted" Binding="{Binding IsAdopted}" Width="Auto"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="Auto"/>
+                <DataGridTextColumn Header="Color" Binding="{Binding Color}" Width="Auto"/>
+                <DataGridTextColumn Header="Size" Binding="{Binding Size}" Width="Auto"/>
+                <DataGridTextColumn Header="UserId" Binding="{Binding UserId}" Width="Auto"/>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
         
+        <Button x:Name="btnAdopt" Content="Adopt" HorizontalAlignment="Left" Margin="302,407,0,24" Width="167" Foreground="White" Background="#FFA2AA3D" Click="btnAdopt_Click"/>
+
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="546,407,0,25" Width="167" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
     </Grid>
 </Window>

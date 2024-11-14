@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PawFund"
         mc:Ignorable="d"
-        Title="StaffWindow" Height="450" Width="800">
+              Title="StaffWindow" Height="500" Width="1000"
+FontFamily="Tahoma"
+FontSize="13"
+Background="#FFF2F184"
+WindowStartupLocation="CenterScreen"
+>
+
     <Grid>
-        
+        <DataGrid x:Name="dgair" AutoGenerateColumns="False" ItemsSource="{Binding Adoptions}" Margin="10,10,10,133" SelectionChanged="dgair_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="txtPlayerId" Header="Adoption ID" Binding="{Binding AdoptionId}" Width="Auto"/>
+                <DataGridTextColumn Header="User ID" Binding="{Binding UserId}" Width="100"/>
+                <DataGridTextColumn Header="Pet ID" Binding="{Binding PetId}" Width="Auto"/>
+                <DataGridTextColumn Header="Is Approved" Binding="{Binding IsApproved}" Width="Auto"/>
+                <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}" Width="150"/>
+                <DataGridTextColumn Header="Self Description" Binding="{Binding SelfDescription}" Width="Auto"/>
+                <DataGridTextColumn Header="Has Pet Experience" Binding="{Binding HasPetExperience}" Width="Auto"/>
+                <DataGridTextColumn Header="Reason For Adopting" Binding="{Binding ReasonForAdopting}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="btnAcceptAdopt" Content="Accept Adopt" HorizontalAlignment="Left" Margin="294,401,0,30" Width="167" Foreground="White" Background="#FFA2AA3D" Click="btnAcceptAdopt_Click"/>
+
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="548,401,0,31" Width="167" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
     </Grid>
 </Window>

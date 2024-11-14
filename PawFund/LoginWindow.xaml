@@ -122,19 +122,20 @@ CaretBrush="LightGray"
 
 
                     </Button>
+                    
 
 
                 </StackPanel>
                 <StackPanel>
-                    <Button x:Name="btnCancel"                          
+                    <Button x:Name="btnRegister"                          
 BorderThickness="0"
-Content="CANCEL"
+Content="REGISTER"
 Foreground="White"
 FontSize="12"
 FontFamily="Montserrat"
 Cursor="Hand"                           
 Margin="20,350,20,0"
-Click="btnCancel_Click">
+Click="btnRegister_Click">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="LightSeaGreen"/>
@@ -158,7 +159,6 @@ Click="btnCancel_Click">
 
 
                     </Button>
-
                 </StackPanel>
 
             </Grid>

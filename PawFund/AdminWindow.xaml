@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PawFund"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="450" Width="800">
+              Title="AdminWindow" Height="500" Width="1000"
+FontFamily="Tahoma"
+FontSize="13"
+Background="#FFF2F184"
+WindowStartupLocation="CenterScreen"
+>
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="929*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgair" AutoGenerateColumns="False" ItemsSource="{Binding Users}" Margin="10,10,10,133" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="UserID" Binding="{Binding UserId}" Width="Auto"/>
+                <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="300"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="Auto"/>
+                <DataGridTextColumn Header="PhoneNumber" Binding="{Binding PhoneNumber}" Width="Auto"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
+                <DataGridTextColumn Header="Password" Binding="{Binding Password}" Width="Auto"/>
+                <DataGridTextColumn Header="RoleID" Binding="{Binding RoleId}" Width="Auto"/>
+
+
+
+                <DataGridTextColumn Header="RoleName" Binding="{Binding RoleName}" Width="Auto"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="140,406,0,25" Width="167" Background="#FF1B7140" Foreground="White" RenderTransformOrigin="0.37,0.2" Click="btnUpdate_Click" Grid.Column="1"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="340,406,0,25" Width="167" Foreground="White" Background="#FFA2AA3D" Click="btnDelete_Click" Grid.Column="1"/>
+
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="536,407,0,25" Width="167" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click" Grid.Column="1"/>
     </Grid>
 </Window>
