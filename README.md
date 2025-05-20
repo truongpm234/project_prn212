@@ -12,7 +12,7 @@ ______________________________________________
 
 
 ### 🛠️ Tech Stack
-Backend: ASP.NET Core WPF Console App (.NET v8)
+Backend: ASP.NET WPF Console App
 Database: Microsoft SQL Server
 ORM: Entity Framework Core
 Email Service: SMTP-based custom mail service
