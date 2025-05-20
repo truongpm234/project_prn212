@@ -49,7 +49,7 @@ PawFund là một nền tảng WPF được thiết kế nhằm hỗ trợ việ
 ### 📬 Liên hệ
 
 Nếu có thắc mắc hoặc muốn hợp tác, vui lòng liên hệ qua email:  
-✉️ ghoul1645@gmail.com
+✉️[Email](ghoul1645@gmail.com)
 
 ---
 
