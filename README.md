@@ -21,8 +21,8 @@ ______________________________________________
 
 ### 📁 Structure
 BusinessObject(Entity classes) <br>
-DataAccessLayer(Access data from SQL Server)
-Services(include service)
+DataAccessLayer(Access data from SQL Server) <br>
+Services(include service) <br>
 View(include view xaml and controller via xaml.cs)
 ______________________________________________
 
