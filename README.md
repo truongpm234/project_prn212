@@ -38,7 +38,7 @@ PawFund là một nền tảng WPF được thiết kế nhằm hỗ trợ việ
 
 1. **Clone** repository về máy:
     ```bash
-    git clone https://github.com/truongpm234/PawFund.git
+    git clone https://github.com/truongpm234/project_prn212.git
     ```
 2. **Cấu hình kết nối database** trong file `appsettings.json`.
 3. **Mở project** bằng Visual Studio và **build**.
